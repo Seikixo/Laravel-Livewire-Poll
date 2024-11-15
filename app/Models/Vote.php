@@ -10,7 +10,8 @@ class Vote extends Model
 {
     use HasFactory;
 
-    public function option(): BelongsTo{
+    public function option(): BelongsTo
+    {
         return $this->belongsTo(Option::class);
     }
 }
